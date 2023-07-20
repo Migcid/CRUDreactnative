@@ -1,0 +1,36 @@
+### COMENZAR UN PROYECTO CON REACT Y EXPO
+
+Esta app es creada siguiendo los pasos de este video, tambien se aplican algunas mejoras, no es seguido al 100% debido que existen nuevas actualizaciones para las dependencies de npm usadas a la fecha en que se hizo el tutorial-video.
+
+1- Instalar mpm install -g expo-cli
+2- Iniciar expo init (nombre del proyecto)
+3- nos pregunta como queremos iniciar el proyecto y le colocamos blank
+4- Usaremos firebase de google para tener un backend, una base de datos ya creada, una 
+manera de autenticarse.
+5- Ejecutar expo start y si no funciona usar npm start y deberia inciar en la web un localhost
+ pero en mi caso no me deja y me da opciones como estas:
+	Logs for your project will appear below. Press Ctrl+C to exit.        
+It looks like you're trying to use web support but don't have the 
+required dependencies installed.
+
+Please install react-native-web@~0.18.10, react-dom@18.2.0,       
+@expo/webpack-config@^18.0.1 by running:
+
+npx expo install react-native-web@~0.18.10 react-dom@18.2.0       
+@expo/webpack-config@^18.0.1
+
+If you're not using web, please ensure you remove the "web" string
+from the platforms array in the project Expo config.
+
+5.1- Instalar el npx expo install react-native-web@~0.18.10 react-dom@18.2.0 
+5.2 luego ejecutar nuevamente npm start e iniciara el proyecto pero no se abrio en la pagina
+web del navegador por lo que hay que escanear el codigo y se abrira en la app del celular
+si es que tengo instalado la app Expo Go. 
+
+6- Podemos iniciar tambien directamente npx expo start y escaneo con la camara del iphone y me lleva directamente a la app Expo Go para visualizar los cambios que voy realizando.
+7- Tambien se puede inciar con npm run start cuando en e; package.json contiene:
+	{
+  "scripts": { 
+    "start": "expo start"
+  }
+}
