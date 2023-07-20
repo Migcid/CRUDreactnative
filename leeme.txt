@@ -1,6 +1,7 @@
 ### COMENZAR UN PROYECTO CON REACT Y EXPO
 
 Esta app es creada siguiendo los pasos de este video, tambien se aplican algunas mejoras, no es seguido al 100% debido que existen nuevas actualizaciones para las dependencies de npm usadas a la fecha en que se hizo el tutorial-video.
+https://www.youtube.com/watch?v=VE7J0SA1PRQ
 
 1- Instalar mpm install -g expo-cli
 2- Iniciar expo init (nombre del proyecto)
