@@ -3,8 +3,11 @@
 Esta app es creada siguiendo los pasos de este video, tambien se aplican algunas mejoras, no es seguido al 100% debido que existen nuevas actualizaciones para las dependencies de npm usadas a la fecha en que se hizo el tutorial-video.
 https://www.youtube.com/watch?v=VE7J0SA1PRQ
 
+https://www.youtube.com/watch?v=VE7J0SA1PRQ&t=319s
+
 1- Instalar mpm install -g expo-cli
-2- Iniciar expo init (nombre del proyecto)
+2- Iniciar expo init (nombre del proyecto) pero desde la version 48 pafece que ahora se inicia con este comando:
+  npx create-expo-app nombreDelProyecto
 3- nos pregunta como queremos iniciar el proyecto y le colocamos blank
 4- Usaremos firebase de google para tener un backend, una base de datos ya creada, una 
 manera de autenticarse.
@@ -13,6 +16,7 @@ manera de autenticarse.
 	Logs for your project will appear below. Press Ctrl+C to exit.        
 It looks like you're trying to use web support but don't have the 
 required dependencies installed.
+
 
 Please install react-native-web@~0.18.10, react-dom@18.2.0,       
 @expo/webpack-config@^18.0.1 by running:
@@ -35,3 +39,11 @@ si es que tengo instalado la app Expo Go.
     "start": "expo start"
   }
 }
+8- instalar REACT Navigation e instalar las dependencias para ejecutarlo con la EXPO cli
+9- importar en APP.js el NavigationContainer
+10- crear una funcion MyStack para tener un orde con las multiples ventanas o screens de nuestra app pero esos componentes que se crean, vienen de React Navigation Stack para es se debe instalar la dependencia.
+11- instalar ReactNavigationStack
+12- Despues de instalar la dependencia, se debe importar el modulo en app.js createStakNavigator
+13- llamar a la funcion createStakNavigator()
+14 despues de haber creado la funcion (dentro de una constante llamada Stack) debo importar el componente en la funcion MyStack, el Stack.Navigator y por cada pantalla que quiera crear, debo crear un componente llamado Stack.Screen y creamos 3 pantallas.
+15-
