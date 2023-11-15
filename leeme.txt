@@ -98,3 +98,7 @@ skipped releases:
 - https://blog.expo.dev/expo-sdk-46-c2a1655f63f7
 - https://blog.expo.dev/expo-sdk-45-f4e332954a68
 
+16- Crear una carpeta con el nombre SCREENS para contener en ella los archivos .js de cada pantalla. se debe imprtar dentro de cada .js React y View y Text de react-native.
+crear la constante con el nombre que comience en Mayuscula porque es un componente y debe ser de una funcion flecha (arrow function), esrtos componentes se debem exportar con export default.
+
+
