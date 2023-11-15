@@ -46,4 +46,55 @@ si es que tengo instalado la app Expo Go.
 12- Despues de instalar la dependencia, se debe importar el modulo en app.js createStakNavigator
 13- llamar a la funcion createStakNavigator()
 14 despues de haber creado la funcion (dentro de una constante llamada Stack) debo importar el componente en la funcion MyStack, el Stack.Navigator y por cada pantalla que quiera crear, debo crear un componente llamado Stack.Screen y creamos 3 pantallas.
-15-
+
+15- HICE UNA ACTUALIZACION DE EXPO PARA UTILIZAR LA EXPO CLI PORQUE ESTABA DEPRECADA LA VERSION CON LA QUE ESTABA TRABAJANDO... LOS RESULTADOS FUERONS ESTOS
+$ expo upgrade
+WARNING: The legacy expo-cli does not support Node +17. Migrate to the new local Expo CLI: 
+https://blog.expo.dev/the-new-expo-cli-f4250d8e3421.
+┌───────────────────────────────────────────────────────────────────────────┐
+│                                                                           │
+│   The global expo-cli package has been deprecated.                        │
+│                                                                           │
+│   The new Expo CLI is now bundled in your project in the expo package.    │
+│   Learn more: https://blog.expo.dev/the-new-expo-cli-f4250d8e3421.        │
+│                                                                           │
+│   To use the local CLI instead (recommended in SDK 46 and higher), run:   │
+│   › npx expo <command>                                                    │
+│                                                                           │
+└───────────────────────────────────────────────────────────────────────────┘
+Your git working tree is clean
+To revert the changes after this command completes, you can run the following:
+  git clean --force && git reset --hard
+√ You are currently using SDK 44.0.0. Would you like to update to the latest version, 49.0.0? ... yes
+
+
+✔ Installed expo@^49.0.0
+✔ Validated configuration.
+✔ No additional changes necessary to app.json config.
+
+✔ Updated known packages to compatible versions.
+✔ Removed package-lock.json and deleted node_modules.
+✔ Installed node_modules and rebuilt package-lock.json.
+✖ Failed to clear packager cache with error: Metro Bundler process exited with code 1
+✔ Cleared packager cache.
+✔ Validated project
+
+👏 Automated upgrade steps complete.
+...but this doesn't mean everything is done yet!
+
+✅ The following packages were updated:
+expo-status-bar, react, react-dom, react-native, react-native-safe-area-context, react-native-screens, react-native-web, @babel/core, @expo/webpack-config, expo
+
+🚨 The following packages were not updated. You should check the READMEs for those repositories to determine what version is compatible with your new set of packages:
+@react-navigation/native, @react-navigation/native-stack
+
+Please refer to the release notes for information on any further required steps to update and information about breaking changes:
+https://blog.expo.dev/expo-sdk-49-c6d398cdf740
+
+In addition to the most recent release notes, you should go over the breaking changes from 
+skipped releases:
+- https://blog.expo.dev/expo-sdk-48-ccb8302e231
+- https://blog.expo.dev/expo-sdk-47-a0f6f5c038af
+- https://blog.expo.dev/expo-sdk-46-c2a1655f63f7
+- https://blog.expo.dev/expo-sdk-45-f4e332954a68
+
