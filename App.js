@@ -25,7 +25,7 @@ function MyStack() {
 
 export default function App() {
   return (
-    <NavigationContainer>
+    <NavigationContainer >
       <MyStack/>
       
     </NavigationContainer>
@@ -38,5 +38,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#41B21E',
     alignItems: 'center',
     justifyContent: 'center',
+    color: "blue",
   },
 });
